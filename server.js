@@ -138,7 +138,7 @@ app.get("/logout",function(req,res)
 {
 	req.logout();
 	clearcookie(res);
-	res.redirect("/homepage");
+	res.redirect("/");
 });
 
 app.get("/signup",function(req,res) 
@@ -226,7 +226,7 @@ app.post("/signup",function(req,res)
 
 
 
-app.get("/homepage",function(req,res)
+app.get("/",function(req,res)
 {
 	//res.render("homepage");
 	if(req.isAuthenticated())
@@ -546,7 +546,7 @@ app.get("/google",passport.authenticate("google",{
 app.get("/google/redirect",passport.authenticate("google"),function(req,res)
 {
 	//console.log("Redirected from google: " +JSON.stringify(req.user));
-	res.redirect("/homepage");		
+	res.redirect("/");		
 })
 
 passport.use(

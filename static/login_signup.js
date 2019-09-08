@@ -110,10 +110,10 @@ $(document).ready(function()
 			      	
 			      	if(info.message == "success")
 			      	{
-			      		window.location.href = "http://localhost:3000/homepage";
+			      		window.location.href = "http://localhost:3000/";
 			      		//$("#cover").fadeOut(100);
 		    			//$("#cover").css("display", "none");
-			      		//window.location.href = "http://localhost:3000/homepage";	
+			      		//window.location.href = "http://localhost:3000/";	
 			      	}
 			      	else
 			      	{
